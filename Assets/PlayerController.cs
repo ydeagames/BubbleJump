@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public Collider2D footCollider;
     // 床あたり
     public LayerMask footLayerMask;
+    // エフェクト
+    public ParticleSystem particle;
 
     private float move;
     private bool jump;
@@ -71,5 +73,7 @@ public class PlayerController : MonoBehaviour
     {
         // jumpable = true;
         //rigid.AddForce(Vector2.up * (rigid.velocity.y) * jumpPower);
+        if (particle != null)
+            Instantiate(particle).transform.position = transform.position;
     }
 }

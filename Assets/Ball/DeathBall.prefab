@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1345a2bb0892a2e45afc8d42216a0101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathSound: {fileID: 8300000, guid: 35bfb63f3724b5d4b8148bd88699d056, type: 3}
 --- !u!1001 &1078261028728923952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94,6 +95,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.9433962
       objectReference: {fileID: 0}
+    - target: {fileID: 1052628780222095286, guid: abd4a3ba808c640448b4089fa2a3dfdf,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents:
     - {fileID: 2440824926845367080, guid: abd4a3ba808c640448b4089fa2a3dfdf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: abd4a3ba808c640448b4089fa2a3dfdf, type: 3}
